@@ -1,0 +1,45 @@
+<?php
+$z[0]=Array("pagestyle","",0,91);
+$z[0][4]['maxwidth']="800";
+$z[0][4]['pagepicnum']="12";
+$z[0][4]['ddmaxwidth']="200";
+$z[0][4]['row']="3";
+$z[0][4]['col']="4";
+$z[0][4]['value']="2";
+$z[1]=Array("img"," /uploads/allimg/150517/1-15051H11103.jpg ",93,238);
+$z[1][4]['ddimg']="/uploads/allimg/150517/1-15051H11103.jpg";
+$z[1][4]['text']="";
+$z[1][4]['width']="562";
+$z[1][4]['height']="750";
+$z[2]=Array("img"," /uploads/allimg/150517/1-15051H11115.jpg ",240,385);
+$z[2][4]['ddimg']="/uploads/allimg/150517/1-15051H11115.jpg";
+$z[2][4]['text']="";
+$z[2][4]['width']="562";
+$z[2][4]['height']="750";
+$z[3]=Array("img"," /uploads/allimg/150517/1-15051H11116.jpg ",387,532);
+$z[3][4]['ddimg']="/uploads/allimg/150517/1-15051H11116.jpg";
+$z[3][4]['text']="";
+$z[3][4]['width']="562";
+$z[3][4]['height']="750";
+$z[4]=Array("img"," /uploads/allimg/150517/1-15051H11120.jpg ",534,679);
+$z[4][4]['ddimg']="/uploads/allimg/150517/1-15051H11120.jpg";
+$z[4][4]['text']="";
+$z[4][4]['width']="610";
+$z[4][4]['height']="739";
+$z[5]=Array("img"," /uploads/allimg/150517/1-15051H11123.jpg ",681,826);
+$z[5][4]['ddimg']="/uploads/allimg/150517/1-15051H11123.jpg";
+$z[5][4]['text']="";
+$z[5][4]['width']="562";
+$z[5][4]['height']="750";
+$z[6]=Array("img"," /uploads/allimg/150517/1-15051H11129.jpg ",828,973);
+$z[6][4]['ddimg']="/uploads/allimg/150517/1-15051H11129.jpg";
+$z[6][4]['text']="";
+$z[6][4]['width']="562";
+$z[6][4]['height']="750";
+$z[7]=Array("img"," /uploads/allimg/150517/1-15051H11134.jpg ",975,1120);
+$z[7][4]['ddimg']="/uploads/allimg/150517/1-15051H11134.jpg";
+$z[7][4]['text']="";
+$z[7][4]['width']="568";
+$z[7][4]['height']="750";
+
+?>

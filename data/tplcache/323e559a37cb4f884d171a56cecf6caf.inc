@@ -1,0 +1,1 @@
+<li><div class="case_pic"><a href="[field:arcurl/]" target="_blank" title="[field:title/]"><img src="[field:litpic/]" width="241" height="145" alt="[field:title/]"  /></a></div><div class="case_name"><a href="[field:arcurl/]" target="_blank" title="[field:title/]">[field:title/]</a></div></li>

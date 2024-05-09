@@ -1,0 +1,1035 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta name="author" content="赤兔网络" />
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/core.css" />
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/style.css" />
+<script language="javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="{dede:global.cfg_templets_skin/}/js/common.js" type="text/javascript"></script>
+<script language="javascript" src="{dede:global.cfg_templets_skin/}/js/qq.js" type="text/javascript"></script>
+<!--[if lte IE 6]>
+<script src="{dede:global.cfg_templets_skin/}/js/DD_belatedPNG_0.0.8a-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('img');
+    </script>
+<![endif]--> 
+</head>
+<body>
+<!--  头部开始  -->
+{dede:include filename="head.htm"/}
+<script type="text/javascript">
+
+//选项卡
+
+jQuery(function(){
+
+	$(".lmenu a").click(function(){
+
+		if($(this).attr("id")=="notab"){
+
+			return  ;
+
+		}else{
+
+			var num=$(".lmenu a").length;
+
+			$(".lmenu a").removeClass();
+
+			$(this).addClass("over");
+
+			var tagindex = $(".lmenu a").index($(this)[0]);
+
+			var pobj = $(this).parent().parent();
+
+			for(var i=0; i<num; i++){
+
+				pobj.children(".rcontent").hide();
+
+			}
+
+			pobj.children(".rcontent").slice(tagindex,tagindex+1).show();
+
+		}
+
+	});
+
+	
+
+});
+
+</script>
+
+<!--  主标题 开始 -->
+
+<div id="main_title">
+
+	<div class="left"><h1><span>网站推广</span>让您的网站创造更大价值</h1></div>
+
+</div>
+
+<!--  主标题 结束 --> 
+
+
+
+<!-- 主体 开始 -->
+
+<div id="sub_main">
+
+	<div class="tgtab">
+
+    	<div class="tab_nav">
+
+         
+          <a href="/sj"  ><span>中国商机发布引擎</span></a>
+
+		  
+          <a href="/400/"  target="_blank"><span>400电话</span></a>
+
+		  
+          <a href="/nicesms/"  target="_blank"><span>短信群发平台</span></a>
+
+		  
+          <a href="/ali"  ><span>阿里巴巴云邮箱</span></a>
+
+		  
+          <a href="/ec" class="over" ><span>腾讯EC客户通</span></a>
+
+		    
+
+         <a  href="/tg"><span>百度竞价排名</span></a>
+
+        </div>
+
+        <div class="tgtabid">
+
+			<span class="lmenu"><a class="over">产品简介</a><a>应用价值</a><a>网站客服</a><a>呼叫中心</a><a>存储客户</a><a>维系客户</a><a>营销分析</a><a href="/idc" id="notab">常见问题</a></span>
+
+            <div class="rcontent" style="display:block">
+
+           <!-- EC视频演示 开始 -->
+
+      			<DIV id="ecvideo">
+
+              <DIV class="player">
+
+              	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="600" height="470">
+
+                  <param name="movie" value="{dede:global.cfg_templets_skin/}//flash/ec.swf" />
+
+                  <param name="quality" value="high" />
+
+                  <embed src="{dede:global.cfg_templets_skin/}//flash/ec.swf" width="600" height="470" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" bgcolor="#000000"></embed>
+
+                </object>
+
+              </DIV>
+
+              <A class="close" href="javascript:void(0)">关闭</A> 
+
+      </DIV>
+
+	  
+
+	  <DIV id="ecreg" style="z-index:99999">
+
+              <DIV class="regform">
+
+                <form name="regform" id="regform" >
+
+     	<table width="100%" border="0" align="center" cellpadding="5" cellspacing="1" bgcolor="#cccccc">
+
+          <tr>
+
+            <td height="35" colspan="2" align="center" class="form_title" bgcolor="#eeeeee"><font size="+2"><strong>注册EC客户通</strong></font></td>
+
+          </tr>
+
+          <tr>
+
+            <td width="150" align="right" bgcolor="#FFFFFF">企业名称:</td>
+
+            <td align="left" bgcolor="#FFFFFF"><input type="text" name="txtcorpname" id="txtcorpname" />  *   </td>
+
+          </tr>
+
+          <tr>
+
+            <td align="right" bgcolor="#FFFFFF">企业简称:</td>
+
+            <td align="left" bgcolor="#FFFFFF"><input type="text" name="txtcorpshotname" id="txtcorpshotname" />
+
+* </td>
+
+          </tr>
+
+          <tr>
+
+            <td align="right" bgcolor="#FFFFFF">网站域名:</td>
+
+            <td align="left" bgcolor="#FFFFFF"><input type="text" name="website" id="website" />
+
+*  </td>
+
+          </tr>
+
+          <tr>
+
+            <td align="right" bgcolor="#FFFFFF">行业:</td>
+
+            <td align="left" bgcolor="#FFFFFF">
+
+			<select id="vocation" name="vocation">
+
+                     	<option selected="selected" value="">请选择</option>
+
+                              <optgroup label="高科技">
+
+                              <option id="voc1" value="1">&nbsp;&nbsp;空间科技</option>
+
+                              <option id="voc2" value="2">&nbsp;&nbsp;计算机硬件</option>
+
+                              <option id="voc3" value="3">&nbsp;&nbsp;计算机软件</option>
+
+                              <option id="voc4" value="4">&nbsp;&nbsp;计算机网络设备</option>
+
+                              <option id="voc5" value="5">&nbsp;&nbsp;计算机&amp;网络安全</option>
+
+                              <option id="voc6" value="6">&nbsp;&nbsp;计算机游戏</option>
+
+                              <option id="voc7" value="7">&nbsp;&nbsp;互联网</option>
+
+                              <option id="voc8" value="8">&nbsp;&nbsp;半导体</option>
+
+                              <option id="voc9" value="9">&nbsp;&nbsp;电信&amp;通讯</option>
+
+                              <option id="voc10" value="10">&nbsp;&nbsp;纳米技术</option>
+
+                              <option id="voc11" value="11">&nbsp;&nbsp;信息技术与服务</option>
+
+                              <option id="voc12" value="12">&nbsp;&nbsp;无线通讯</option>
+
+                              </optgroup>
+
+                              <optgroup label="法律">
+
+                              <option id="voc13" value="13">&nbsp;&nbsp;法律援助</option>
+
+                              <option id="voc14" value="14">&nbsp;&nbsp;法律服务</option>
+
+                              </optgroup>
+
+                              <optgroup label="专业咨询、服务">
+
+                              <option id="voc15" value="15">&nbsp;&nbsp;管理咨询</option>
+
+                              <option id="voc16" value="16">&nbsp;&nbsp;招聘、猎头</option>
+
+                              <option id="voc17" value="17">&nbsp;&nbsp;人力资源</option>
+
+                              <option id="voc18" value="18">&nbsp;&nbsp;培训</option>
+
+                              <option id="voc19" value="19">&nbsp;&nbsp;市场推广&amp;广告</option>
+
+                              <option id="voc20" value="20">&nbsp;&nbsp;市场调研</option>
+
+                              <option id="voc21" value="21">&nbsp;&nbsp;公共关系</option>
+
+                              <option id="voc22" value="22">&nbsp;&nbsp;翻译服务</option>
+
+                              <option id="voc23" value="23">&nbsp;&nbsp;设备维护</option>
+
+                              <option id="voc24" value="24">&nbsp;&nbsp;外包服务</option>
+
+                              <option id="voc25" value="25">&nbsp;&nbsp;会务及活动服务</option>
+
+                              </optgroup>
+
+                              <optgroup label="医疗与健康">
+
+                              <option id="voc26" value="26">&nbsp;&nbsp;生物工程</option>
+
+                              <option id="voc27" value="27">&nbsp;&nbsp;生物信息</option>
+
+                              <option id="voc28" value="28">&nbsp;&nbsp;医院&amp;医疗</option>
+
+                              <option id="voc29" value="29">&nbsp;&nbsp;医药品</option>
+
+                              <option id="voc30" value="30">&nbsp;&nbsp;医疗设备</option>
+
+                              <option id="voc31" value="31">&nbsp;&nbsp;兽医</option>
+
+                              <option id="voc32" value="32">&nbsp;&nbsp;健身</option>
+
+                              <option id="voc33" value="33">&nbsp;&nbsp;心理健康</option>
+
+                              <option id="voc34" value="34">&nbsp;&nbsp;中医</option>
+
+                              </optgroup>
+
+                              <optgroup label="媒体">
+
+                              <option id="voc35" value="35">&nbsp;&nbsp;广播</option>
+
+                              <option id="voc36" value="36">&nbsp;&nbsp;电视</option>
+
+                              <option id="voc37" value="37">&nbsp;&nbsp;电影</option>
+
+                              <option id="voc38" value="38">&nbsp;&nbsp;报纸</option>
+
+                              <option id="voc39" value="39">&nbsp;&nbsp;杂志</option>
+
+                              <option id="voc40" value="40">&nbsp;&nbsp;出版</option>
+
+                              <option id="voc41" value="41">&nbsp;&nbsp;写作&amp;编辑</option>
+
+                              <option id="voc42" value="42">&nbsp;&nbsp;文化艺术</option>
+
+                              <option id="voc43" value="43">&nbsp;&nbsp;印刷</option>
+
+                              <option id="voc44" value="44">&nbsp;&nbsp;互联网媒体</option>
+
+                              <option id="voc45" value="45">&nbsp;&nbsp;媒体设计制作</option>
+
+                              </optgroup>
+
+                              <optgroup label="体育、休闲、旅游、娱乐">
+
+                              <option id="voc46" value="46">&nbsp;&nbsp;娱乐业</option>
+
+                              <option id="voc47" value="47">&nbsp;&nbsp;休闲度假&amp;旅游</option>
+
+                              <option id="voc48" value="48">&nbsp;&nbsp;餐饮业</option>
+
+                              <option id="voc49" value="49">&nbsp;&nbsp;住宿业</option>
+
+                              <option id="voc50" value="50">&nbsp;&nbsp;体育运动</option>
+
+                              <option id="voc51" value="51">&nbsp;&nbsp;食品&amp;饮料</option>
+
+                              <option id="voc52" value="52">&nbsp;&nbsp;娱乐设备与服务</option>
+
+                              </optgroup>
+
+                              <optgroup label="金融">
+
+                              <option id="voc53" value="53">&nbsp;&nbsp;保险</option>
+
+                              <option id="voc54" value="54">&nbsp;&nbsp;财经服务</option>
+
+                              <option id="voc55" value="55">&nbsp;&nbsp;房地产</option>
+
+                              <option id="voc56" value="56">&nbsp;&nbsp;投资银行</option>
+
+                              <option id="voc57" value="57">&nbsp;&nbsp;风险投资</option>
+
+                              <option id="voc58" value="58">&nbsp;&nbsp;私募股权投资</option>
+
+                              <option id="voc59" value="59">&nbsp;&nbsp;证券</option>
+
+                              <option id="voc60" value="60">&nbsp;&nbsp;会计</option>
+
+                              </optgroup>
+
+                              <optgroup label="非盈利性组织">
+
+                              <option id="voc61" value="61">&nbsp;&nbsp;非盈利性组织管理</option>
+
+                              <option id="voc62" value="62">&nbsp;&nbsp;公益基金</option>
+
+                              <option id="voc63" value="63">&nbsp;&nbsp;智囊团</option>
+
+                              <option id="voc64" value="64">&nbsp;&nbsp;慈善事业</option>
+
+                              </optgroup>
+
+                              <optgroup label="教育">
+
+                              <option id="voc65" value="65">&nbsp;&nbsp;义务教育</option>
+
+                              <option id="voc66" value="66">&nbsp;&nbsp;高等教育</option>
+
+                              <option id="voc67" value="67">&nbsp;&nbsp;教育管理</option>
+
+                              <option id="voc68" value="68">&nbsp;&nbsp;教育研究</option>
+
+                              </optgroup>
+
+                              <optgroup label="日常消费品">
+
+                              <option id="voc69" value="69">&nbsp;&nbsp;化妆品</option>
+
+                              <option id="voc70" value="70">&nbsp;&nbsp;服装服饰</option>
+
+                              <option id="voc71" value="71">&nbsp;&nbsp;体育用品</option>
+
+                              <option id="voc72" value="72">&nbsp;&nbsp;烟草</option>
+
+                              <option id="voc73" value="73">&nbsp;&nbsp;超市卖场</option>
+
+                              <option id="voc74" value="74">&nbsp;&nbsp;食物生产</option>
+
+                              <option id="voc75" value="75">&nbsp;&nbsp;酒类</option>
+
+                              <option id="voc76" value="76">&nbsp;&nbsp;消费电子</option>
+
+                              <option id="voc77" value="77">&nbsp;&nbsp;快速消费品</option>
+
+                              <option id="voc78" value="78">&nbsp;&nbsp;家具</option>
+
+                              <option id="voc79" value="79">&nbsp;&nbsp;零售</option>
+
+                              <option id="voc80" value="80">&nbsp;&nbsp;批发</option>
+
+                              <option id="voc81" value="81">&nbsp;&nbsp;进出口</option>
+
+                              <option id="voc82" value="82">&nbsp;&nbsp;奢侈品&amp;珠宝</option>
+
+                              </optgroup>
+
+                              <optgroup label="建筑">
+
+                              <option id="voc83" value="83">&nbsp;&nbsp;建筑工程</option>
+
+                              <option id="voc84" value="84">&nbsp;&nbsp;建材</option>
+
+                              <option id="voc85" value="85">&nbsp;&nbsp;建筑设计</option>
+
+                              <option id="voc86" value="86">&nbsp;&nbsp;土木工程</option>
+
+                              <option id="voc87" value="87">&nbsp;&nbsp;装饰装潢</option>
+
+                              </optgroup>
+
+                              <optgroup label="制造">
+
+                              <option id="voc88" value="88">&nbsp;&nbsp;工艺品</option>
+
+                              <option id="voc89" value="89">&nbsp;&nbsp;飞行航空&amp;宇航</option>
+
+                              <option id="voc90" value="90">&nbsp;&nbsp;汽车</option>
+
+                              <option id="voc91" value="91">&nbsp;&nbsp;化工</option>
+
+                              <option id="voc92" value="92">&nbsp;&nbsp;电子电气设备</option>
+
+                              <option id="voc93" value="93">&nbsp;&nbsp;机械</option>
+
+                              <option id="voc94" value="94">&nbsp;&nbsp;采矿&amp;金属</option>
+
+                              <option id="voc95" value="95">&nbsp;&nbsp;石油&amp;能源</option>
+
+                              <option id="voc96" value="96">&nbsp;&nbsp;回收&amp;环境保护</option>
+
+                              <option id="voc97" value="97">&nbsp;&nbsp;造船</option>
+
+                              <option id="voc98" value="98">&nbsp;&nbsp;纺织及皮革制造</option>
+
+                              <option id="voc99" value="99">&nbsp;&nbsp;造纸&amp;木材</option>
+
+                              <option id="voc100" value="100">&nbsp;&nbsp;铁路</option>
+
+                              <option id="voc101" value="101">&nbsp;&nbsp;玻璃,陶瓷&amp;混凝土</option>
+
+                              <option id="voc102" value="102">&nbsp;&nbsp;包装&amp;集装箱</option>
+
+                              <option id="voc103" value="103">&nbsp;&nbsp;工业管理</option>
+
+                              <option id="voc104" value="104">&nbsp;&nbsp;工业自动化</option>
+
+                              </optgroup>
+
+                              <optgroup label="政府及公共事业">
+
+                              <option id="voc105" value="105">&nbsp;&nbsp;军事机构</option>
+
+                              <option id="voc106" value="106">&nbsp;&nbsp;司法机关</option>
+
+                              <option id="voc107" value="107">&nbsp;&nbsp;外交</option>
+
+                              <option id="voc108" value="108">&nbsp;&nbsp;行政部门</option>
+
+                              <option id="voc109" value="109">&nbsp;&nbsp;卫生社会福利社会保障</option>
+
+                              <option id="voc110" value="110">&nbsp;&nbsp;水利环境公共设施</option>
+
+                              <option id="voc111" value="111">&nbsp;&nbsp;地质勘探</option>
+
+                              <option id="voc112" value="112">&nbsp;&nbsp;水电燃气生产供应</option>
+
+                              <option id="voc113" value="113">&nbsp;&nbsp;公共安全</option>
+
+                              </optgroup>
+
+                              <optgroup label="公共服务业">
+
+                              <option id="voc114" value="114">&nbsp;&nbsp;信息服务</option>
+
+                              <option id="voc115" value="115">&nbsp;&nbsp;图书馆及博物馆</option>
+
+                              <option id="voc116" value="116">&nbsp;&nbsp;保安服务</option>
+
+                              <option id="voc117" value="117">&nbsp;&nbsp;环保服务</option>
+
+                              <option id="voc118" value="118">&nbsp;&nbsp;家政服务</option>
+
+                              <option id="voc119" value="119">&nbsp;&nbsp;宗教协会</option>
+
+                              </optgroup>
+
+                              <optgroup label="交通运输">
+
+                              <option id="voc120" value="120">&nbsp;&nbsp;邮政，包裹，零担货运</option>
+
+                              <option id="voc121" value="121">&nbsp;&nbsp;物流与供应链</option>
+
+                              <option id="voc122" value="122">&nbsp;&nbsp;运输/汽运/铁路</option>
+
+                              <option id="voc123" value="123">&nbsp;&nbsp;仓储</option>
+
+                              <option id="voc124" value="124">&nbsp;&nbsp;航空运输</option>
+
+                              <option id="voc125" value="125">&nbsp;&nbsp;水上运输</option>
+
+                              <option id="voc126" value="126">&nbsp;&nbsp;客运及城市公共交通</option>
+
+                              </optgroup>
+
+                              <optgroup label="农林牧渔业">
+
+                              <option id="voc127" value="127">&nbsp;&nbsp;渔业</option>
+
+                              <option id="voc128" value="128">&nbsp;&nbsp;林业</option>
+
+                              <option id="voc129" value="129">&nbsp;&nbsp;农场</option>
+
+                              <option id="voc130" value="130">&nbsp;&nbsp;畜牧</option>
+
+                              <option id="voc131" value="131">&nbsp;&nbsp;商品贸易</option>
+
+                              <option id="voc132" value="132">&nbsp;&nbsp;国内贸易</option>
+
+                              <option id="voc133" value="133">&nbsp;&nbsp;国际贸易</option>
+
+                              </optgroup>
+
+                              <optgroup label="其他行业"></optgroup>
+
+                              <option id="voc134" value="134">&nbsp;&nbsp;其他行业</option>
+
+                     </select>
+
+			* 
+
+			
+
+			</td>
+
+          </tr>
+
+          <tr>
+
+            <td align="right" bgcolor="#FFFFFF">城市:</td>
+
+            <td align="left" bgcolor="#FFFFFF">
+
+			<select name="province" id="province"></select><select name="city" id="city"></select>
+
+* </td>
+
+          </tr>
+
+          <tr>
+
+            <td align="right" bgcolor="#FFFFFF">管理员姓名:</td>
+
+            <td align="left" bgcolor="#FFFFFF"><input type="text" name="txtname" id="txtname" />
+
+* </td>
+
+          </tr>
+
+          <tr>
+
+            <td align="right" bgcolor="#FFFFFF">职位:</td>
+
+            <td align="left" bgcolor="#FFFFFF"><input type="text" name="txttitle" id="txttitle" />
+
+* </td>
+
+          </tr>
+
+          <tr>
+
+            <td align="right" bgcolor="#FFFFFF">注册账号(手机号）:</td>
+
+            <td align="left" bgcolor="#FFFFFF"><input name="txtphone" type="text" id="txtphone" /> * 仅限使用手机号注册</td>
+
+          </tr>
+
+		  <tr>
+
+            <td align="right" bgcolor="#FFFFFF">密码:</td>
+
+            <td align="left" bgcolor="#FFFFFF"><input name="txtpwd" type="password" id="txtpwd" /> *<font color="red">(非手机密码，可以随意设置，用于登陆客户通)</font></td>
+
+          </tr>
+
+		  <tr>
+
+            <td align="right" bgcolor="#FFFFFF">密码确认:</td>
+
+            <td align="left" bgcolor="#FFFFFF"><input name="txtpwd2" type="password" id="txtpwd2" /> *</td>
+
+          </tr>
+
+          
+
+          <tr>
+
+            <td height="35" colspan="2" align="center" bgcolor="#eeeeee">
+
+
+
+			<input type="button" name="sub" id="sub" value="注册" onclick="checkRegForm()" />  &nbsp; &nbsp;
+
+            <input type="reset" name="reset" value="重置"   />
+
+            
+
+            </td>
+
+          </tr>
+
+        </table>
+
+
+
+     
+
+     </form>
+
+              </DIV>
+
+              <A class="regclose" href="javascript:void(0)">关闭</A> 
+
+      </DIV>
+
+			<script language="javascript" src="{dede:global.cfg_templets_skin/}/js/address.js"></script>
+
+     		<script language="javascript">
+
+		  	jQuery(function(){
+
+				$(".close").click(function(){ $("#ecvideo").hide();});
+
+				$(".showvideo").click(function(){ $("#ecvideo").show();popup($("#ecvideo"));});
+
+				
+
+				$(".regclose").click(function(){ $("#ecreg").hide();});
+
+				$(".showreg").click(function(){ $("#ecreg").show();popup($("#ecreg"));});
+
+				
+
+				InitPrviCitySelect(document.getElementById("province"),document.getElementById("city"), 440000, 440300);
+
+				
+
+			});
+
+			
+
+			function checkRegForm(){
+
+	
+
+	o = document.regform.elements;	
+
+	
+
+	
+
+	var err="";
+
+	
+
+	if(o["txtcorpname"].value=="") err+="请填写企业名称!\n";
+	
+
+	if(o["txtcorpshotname"].value=="")err+="请填写企业简称!\n";
+
+	if(o["website"].value=="")err+="请填写网站域名!\n";
+
+	if(o["vocation"].value=="")err+="请选择行业!\n";
+
+	if(o["province"].value=="")err+="请选择省份!\n";	
+
+	if(o["city"].value=="")err+="请选择城市!\n";	
+
+	if(o["txtname"].value=="")err+="请填写管理员姓名!\n";	
+
+	if(o["txttitle"].value=="")err+="请填写管理员职位!\n";	
+
+	if(o["txtphone"].value=="")err+="请填写手机号!\n";
+	
+	
+	if(o["txtphone"].value=="" && !isMobile(o["txtphone"].value)) err+="手机号码格式有误!\n";	
+	
+
+	if(o["txtpwd"].value=="")err+="填写密码!\n";	
+	
+
+	if(o["txtpwd2"].value != o["txtpwd"].value)err+="重复密码错误!\n";
+
+	
+
+ 
+
+	if(err!=""){
+
+		alert(err);
+
+		return false;
+
+	}
+
+	else {		
+		//alert("/web/scripts/ec.php");
+	    $.post("/web/scripts/ec.php?rnd="+Math.random(), { act:"submit", txtcorpname:o["txtcorpname"].value,txtcorpshotname:o["txtcorpshotname"].value, website:o["website"].value, vocation:o["vocation"].value, province:o["province"].value,  city:o["city"].value, txtname:o["txtname"].value, txttitle: o["txttitle"].value, txtphone:o["txtphone"].value, txtpwd: o["txtpwd"].value, txtpwd2:o["txtpwd2"].value },
+
+   			function(result){
+				alert(result);
+				rlt = result.split(':');
+
+				if(rlt[0]==1){					
+
+					
+
+					o["sub"].disabled=true;
+
+					o["reset"].disabled=true;
+
+					$(".regform")('<table width="100%" border="0" align="center" cellpadding="5" cellspacing="1"><tr><td height="45" align="center" class="form_title" bgcolor="#eeeeee"><font size="+2"><strong>注册成功</strong></font></td></tr><tr><td align="center" valign="center" height="355"><a href="http://www.workec.com/ecsetup.exe"><img src="{dede:global.cfg_templets_skin/}/images/ok.jpg"></a></td></td><tr><td height="35" align="center" bgcolor="#eeeeee"><input type="button" name="sub" id="sub" value="关闭窗口" onclick="$(\'#ecreg\').hide()" /></td></tr></table>');
+
+				}
+
+				else {
+
+					alert(rlt[1]);
+
+				}
+
+			} 
+
+		);	
+
+	
+
+	}
+
+	
+
+}
+
+
+
+			</script>
+
+		 		<!-- EC视频演示 结束 -->
+
+           
+
+            	<h2 class="ectitle">产品简介 <A href="javascript:void(0)" class="showvideo">观看视频讲解</A> <a href="http://www.workec.com/ecsetup8003.exe" target="_blank">下载客户端</a> <a href="javascript:void(0)" class="showreg">在线注册帐号</a> <a href="http://www.workec.com/html/support" target="_blank">苹果和安卓</a></h2>
+
+            	<p>EC客户通是以广告流量为起点、沟通为桥梁，提供网站在线客服、400电话、短信、传真、即时通讯等多种通信方式，集客户咨询、客户管理、主动营销、内部协同办公为一体，包含接待客户、存储客户、维系客户、营销分析四大主要功能，帮助企业搭建“广告转化平台”，最终实现广告流量转订单。
+
+
+
+                </p>
+
+				<p>
+
+				<img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec_intro_top.png" />
+
+				<img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec_intro_bot.png" />
+
+				</p>
+
+<div class="ec_panel">
+
+                	<div class="ec_left"><img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec_left.gif" width="8" height="383" /></div>
+
+                	<div class="ec_main">
+
+                    	<ul>
+
+                        	<li><img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec_icon01.gif" width="59" height="74" />广告流量</li>
+
+                        	<li class="ec_arrow"><img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec_ar_right.gif" width="41" height="24" /></li>
+
+                            <li><img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec_icon02.gif" width="39" height="74" />接待客户</li>
+
+                            <li class="ec_arrow"><img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec_ar_right.gif" width="41" height="24" /></li>
+
+                            <li><img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec_icon03.gif" width="53" height="74" />存储客户</li>
+
+                            <li class="ec_arrow"><img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec_ar_right.gif" width="41" height="24" /></li>
+
+                            <li><img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec_icon04.gif" width="60" height="74" />维系客户</li>
+
+                            <li class="ec_arrow"><img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec_ar_right.gif" width="41" height="24" /></li>
+
+                            <li><img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec_icon05.gif" width="60" height="74" />营销分析</li>
+
+                            <li class="ec_arrow"><img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec_ar_right.gif" width="41" height="24" /></li>
+
+                            <li><img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec_icon06.gif" width="65" height="74" />广告转订单</li>
+
+                        </ul>
+
+                  		<p>
+
+                   	   		<h4>广告效益转换系统</h4>
+
+                        	<img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec_ar_up.gif" width="27" height="40" />
+
+               		  <img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec_icon07.gif" width="286" height="99" style="margin:5px auto 8px" />
+
+                      		<h4>统一通信平台</h4>
+
+					  	</p>
+
+					</div>
+
+                    <div class="ec_right"><img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec_right.gif" width="10" height="383" /></div>
+
+           	  	</div>
+
+               
+
+               	 <h5>产品理念</h5>
+
+               	 <p>是基于EC统一通信的广告效果转化平台。 以广告转化率为中心，通过全效沟通工具（电话、短信、传真、msn等），帮助企业监控广告转订单的全过程、进行广告效果评估，完成企业协同营销。<br>
+
+完全有别于“在线客服”工具，从接待客户、存储客户、维系客户、营销分析四大模块，全部服务于企业协同营销，是一整套广告转化的系统解决方
+
+匹配使用角色关键需求，既帮助企业员工提高工作效率、达成销售业绩，也能辅佐企业老板进行漏斗营销各环节的管理。</p>
+
+                 <p><br /></p><p><br /></p><p><br /></p>
+
+                
+
+                
+
+            </div>
+
+            <div class="rcontent">
+
+            	<div id="ec_02">
+
+                    <h5><strong>搭建企业广告转化平台，获得更多新订单</strong></h5>
+
+                    <h6>通过接待客户、存储客户、维系客户、营销分析四大功能模块流转，获取潜在客户并持续跟进和关怀，最终将广告流量转化为企业订单。<br />
+
+                    </h6>
+
+                    <h5><strong>线上线下全效沟通，提高咨询量</strong></h5>
+
+                    <h6>通过即时通讯方式(如网页会话、MSN等)、免费电话、手机短信受理客户咨询，接待客户随时随地、永不离线。<br />
+
+                    </h6>
+
+                    <h5><strong>主动营销，二次转化，提高转化率</strong></h5>
+
+                    <h6>可通过电话、短信、传真等方式，发送促销信息、节日问候、用户调查等，促进客户二次转化。<br />
+
+                    </h6>
+
+                    <h5><strong>输出流量数据，评估广告效果、考核员工绩效</strong></h5>
+
+                    <h6>输出流量数据，可进行访客来源、关键词、电话分类等广告效果分析，同时对员工接待和跟进客户的数量、过程进行监督和评估。<br />
+
+                    </h6>
+
+                    <h5><strong>内部协同办公，提高员工工作效率</strong></h5>
+
+                    <h6>搭建企业专属的即时通讯平台，清晰的企业部门组织结构，可以进行消息会话、沟通、文件传输、在线会议等，形成协同办公的工作环境。<br />
+
+                    </h6>
+
+                    <h5><strong>网站客服、400电话，提升企业对外形象</strong></h5>
+
+                    <h6>网站在线客服，是企业良好服务的重要标识！   400电话加上专业的语音导航，是大企业的重要标识。</h6>
+
+                </div>
+
+          	</div>
+
+            <div class="rcontent">
+
+              	<div id="ec_03">
+
+               	  	<h5><strong>在网站上，EC提供了简单便捷的网站客服，为网站设置接待员，企业人员可主动邀请访客会话，即时在线沟通，提高网站流量的转化率。</strong></h5>
+
+                    <p>企业管理员可以为网站设置专门的客服人员，让客服能够实时监控网站流量，主动邀请访客会话，提高客户咨询率。</p>
+
+                    <img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec3_1.jpg"  />
+
+                    <p>企业管理员进入&ldquo;企业管理→网站客服&rdquo;进行设置：</p>
+
+                    <h3>1.首先，将相应的员工设置为网站客服。</h3>
+
+                    <img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec3_2.jpg"  />
+
+                    <h3>2.然后，将网站客服的脚本代码内嵌到企业网站中，让网站出现网站客服的漂浮框。</h3>
+
+                    <img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec3_3.jpg"  />
+
+                    <h3>3.网站客服已经设置完成，当访客访问网站时，客服人员可以在EC客户端实时监控网站流量，并能主动发起会话。</h3>
+
+                    <img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec3_4.jpg"  />
+
+              	</div>
+
+          	</div>
+
+            <div class="rcontent">
+
+              	<div id="ec_04">
+
+
+
+                    <h5><strong>在企业总机上，EC基于400电话为企业提供了强大的呼叫中心，支持160个座席、轮询、自动切换上下班时间等多项功能，让员工专业接待每一个来电，提高电话咨询的转化率。</strong></h5>
+
+                    <div>
+
+                      <p>EC基于400电话，整合呼叫中心功能，支持160个座席，实现了来电弹屏、自动转接、自动切换上下班时间、语音导航等功能，提高客户满意度。</p>
+
+                      <img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec4_1.jpg"  />
+
+                      <p>企业可以从EC后台通过400查号系统申请一个400电话号码，管理员通过将不同部门的员工设置到相应的座席组，即可组成一个呼叫中心。</p>
+
+                      <img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec4_2.jpg"  />
+
+                      <p>EC400呼叫中心，包括如下功能：</p>
+
+                      <div class="ec_04_txt">1.语音导航，客户呼入时播放语音，如：&ldquo;拨1市场部，拨2客服部……&rdquo;，方便客户呼入到相应的部门。<br />
+
+                        2.自动呼转，每个部门可以设置多个座席，当第一个座席忙音时，会自动接通第二个座席。<br />
+
+                        3.来电弹屏，当有电话呼入时，EC会弹出提示框，并具有熟客识别功能，可以预知来电信息。<br />
+
+                        4.自动切换上下班时间，上班时间接座机，下班后自动切换到员手机接听。 </div>
+
+                      <img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec4_3.jpg"  /></div>
+
+
+
+              	</div>
+
+          	</div>
+
+            <div class="rcontent">
+
+              	<div id="ec_05">
+
+
+
+                    <h5><strong>无论网站访客，还是来电咨询，EC都会自动记录与管理客户资料，日积月累，自动形成公司的广告客户库，不会流失任何一个咨询客户，不丢失任何一个咨询细节，更不再担心人员更换而造成的广告客户流失。</strong></h5>
+
+                    <div>
+
+                      <p>无论网站访客，还是电话咨询，EC都会自动抓取访问轨迹，系统记录客户信息，帮助企业轻松存储客户资料。</p>
+
+                      <img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec5_1.jpg"  />
+
+                      <p>网站接待人员与访客会话结束后，可以将访客添加为联系人，EC会自动将该访客记录到客户库中，并在该访客下次访问时自动识别。</p>
+
+                      <img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec5_2.jpg"  />
+
+                      <p>来电咨询通话结束时，也可以将来电号码添加为联系人，下次再来电时，EC会直接显示联系人姓名，帮助企业提高接待主动性和服务水平。</p>
+
+                      <img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec5_3.jpg"  />
+
+                      <p>添加联系人资料后，EC会自动记录每次通信轨迹，方便您追溯每个联系人的记录。</p>
+
+                      <img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec5_4.jpg"  />
+
+                      <p>添加联系人资料后，EC会自动记录每次通信轨迹，方便您追溯每个联系人的记录。</p>
+
+                      <img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec5_5.jpg"  />
+
+                      <p>员工把所有联系人共享给企业后，管理员可以集中管理所有客户资料，并可随时查阅任一客户资料，帮助企业从根本上降低客户流失率。</p>
+
+                      <img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec5_6.jpg"  /></div>
+
+
+
+              	</div>
+
+          	</div>
+
+            <div class="rcontent">
+
+              	<div id="ec_06">
+
+                    <h5><strong>EC整合了办公常用的电话、短信、传真、邮件、即时通信等多种通信工具，员工只需轻点鼠标，就能批量、高效的维系客户，企业主能实时掌握与管理客户的跟进情况。</strong></h5>
+
+                    <div>
+
+                      <p>EC整合了办公常用的电话、短信、传真、邮件、即时通信等多种通信工具，企业人员只须轻点鼠标，就能批量维护客户，全面提高客户续费率。</p>
+
+                      <img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec6_1.jpg"  />
+
+                      <p>短信：选择联系人，点击短信图标，输入短信内容，可以把短信直接发送到手机上，也可以收到手机的回复。</p>
+
+                      <img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec6_2.jpg"  />
+
+                      <p>发送传真：选择联系人，点击传真图标，在弹出页面上点击&ldquo;选择传真文档&rdquo;按钮，或将文件拖拽到传真发送框，可以将文件直接发送到对方传真机上。</p>
+
+                      <img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec6_3.jpg"  />
+
+                      <p>接收传真：当传真机给EC发送传真时，系统会自动存成图片文件，可以直接下载查看。</p>
+
+                      <img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec6_4.jpg"  />
+
+                      <p>双方通话：选择联系人，点击电话图标，EC会首先接通您的电话，再接通对方电话，自动建立双方通话，无需手工拨号。</p>
+
+                      <img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec6_5.jpg"  /></div>
+
+
+
+              	</div>
+
+          	</div>
+
+            <div class="rcontent">
+
+              	<div id="ec_07">
+
+                    <h5><strong>EC通过分析广告流量和客户沟通情况，提供清晰反映客户信息与动态的分析图表，实现对客户开发进程的可视化管理，逐步形成企业关键的核心竞争力</strong></h5>
+
+                    <div>
+
+                      <p>EC通过分析广告流量和客户沟通情况，系统输出能清晰反映客户信息的动态报表，全面分析广告效果，帮助企业提高广告命中率。</p>
+
+                      <img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec7_1.jpg"  />
+
+                      <p>分析数据示例：网站访客和来电咨询的数据分析。</p>
+
+                      <img src="{dede:global.cfg_templets_skin/}/images/tuiguang/ec7_2.jpg"  /></div>
+              	</div>
+          </div>
+        </div>     		
+    </div>
+</div>
+
+<!-- 主体 结束 -->
+{dede:include filename="footer.htm"/}
+</body>
+</html>

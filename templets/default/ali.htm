@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta name="author" content="赤兔网络" />
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/core.css" />
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/style.css" />
+<script language="javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="{dede:global.cfg_templets_skin/}/js/common.js" type="text/javascript"></script>
+<script language="javascript" src="{dede:global.cfg_templets_skin/}/js/qq.js" type="text/javascript"></script>
+<!--[if lte IE 6]>
+<script src="{dede:global.cfg_templets_skin/}/js/DD_belatedPNG_0.0.8a-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('img');
+    </script>
+<![endif]--> 
+</head>
+<body>
+<!--  头部开始  -->
+{dede:include filename="head.htm"/}
+
+<script type="text/javascript">
+//选项卡
+jQuery(function(){
+	$(".lmenu a").click(function(){
+		if($(this).attr("id")=="notab"){
+			return  ;
+		}else{
+			var num=$(".lmenu a").length;
+			$(".lmenu a").removeClass();
+			$(this).addClass("over");
+			var tagindex = $(".lmenu a").index($(this)[0]);
+			var pobj = $(this).parent().parent();
+			for(var i=0; i<num; i++){
+				pobj.children(".rcontent").hide();
+			}
+			pobj.children(".rcontent").slice(tagindex,tagindex+1).show();
+		}
+	});
+	
+});
+</script>
+
+<!--  主标题 开始 -->
+<div id="main_title">
+	<div class="left"><h1><span>网站推广</span>让您的网站创造更大价值</h1></div>
+</div>
+<!--  主标题 结束 --> 
+
+<!-- 主体 开始 -->
+<div id="sub_main">
+	<div class="tgtab">
+    	<div class="tab_nav">
+		            <a  href="/sj"  ><span>中国商机发布引擎</span></a>
+		            <a  href="/400/"  target="_blank"><span>400电话</span></a>
+		            <a  href="/nicesms/"  target="_blank"><span>短信群发平台</span></a>
+		            <a  href="/ali" class="over" ><span>阿里巴巴云邮箱</span></a>
+		            <a  href="/ec"  ><span>腾讯EC客户通</span></a> 
+          <a href="/tg"><span>百度竞价排名</span></a>
+        </div>
+        <div class="tgtabid">
+			<span class="lmenu"><a class="over">产品简介</a><a>为什么选择</a><a>万网云技术</a><a>风险提示</a></span>
+<div class="rcontent" style="display:block">            
+            	<div class="ali_panel">
+                	<div class="ali_left">
+                    	<ul>
+                        	<li><strong>系统高可靠性</strong>，云计算平台，清除单点故障</li>
+                            <li><strong>数据完整性</strong>，完善的数据备份，可恢复30天误删除的邮件</li>
+                            <li><strong>邮件列表</strong>，即邮件组，便捷的向组内成员群发通知邮件</li>
+                            <li><strong>群发单显</strong>，群发邮件，单独显示，收件人只能看到自己的地址</li>
+                            <li><strong>邮件撤回</strong>，比摧毁更好的邮件撤回功能，让误发送的邮件便捷的收回；<br /> 
+								仅支持撤回发往万网云邮箱系统、且对方尚未阅读的邮件 
+							</li>
+                            <li><strong>断点续传</strong>，G级超大附件轻松发送，支持断点续传</li>
+                        </ul>
+                    </div>
+                    <div class="ali_right">
+                    	<div>
+                        	<dl>
+                            	<dt>1G版</dt>
+                                <dd>1G/每用户</dd>
+                                <dd>80元/G</dd>
+                                <dd>50用户起售</dd>
+                            </dl>
+                            <dl>
+                            	<dt>3G版</dt>
+                                <dd>3G/每用户</dd>
+                                <dd>140元/3G</dd>
+                                <dd>5用户起售</dd>
+                            </dl>
+                            <dl>
+                            	<dt>10G版</dt>
+                                <dd>10G/每用户</dd>
+                                <dd>160元/10G</dd>
+                                <dd>3用户起售</dd>
+                            </dl>
+                            <dl>
+                            	<dt>1T</dt>
+                                <dd>1T/每用户</dd>
+                                <dd>260元/T</dd>
+                                <dd>5用户起售</dd>
+                            </dl>
+                            <dl>
+                            	<dt>100M</dt>
+                                <dd>100M/每用户</dd>
+                                <dd>100元/100M</dd>
+                                <dd>5用户起售</dd>
+                            </dl>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            	<h2>产品简介</h2>
+            	
+               	<ul class="ali">
+                	<li class="ali01">
+                    	<h3>站在云端，全球畅邮！</h3>
+                        <p>云邮箱是基于庞大的服务器集群构建的企业邮箱平台，在全球多个节点部署了多个中转集群，保证邮件在全球收发无阻，是企业商务信息往来的重要工具。</p>
+                    </li>
+                    <li class="ali02">
+                    	<h3>功能强大，安全稳固！</h3>
+                        <p>万网云邮箱不仅具有传统邮箱系统的各种优势，而且具有往来邮件，文件共享等更加实用的功能。基于庞大的服务器集群，云邮箱彻底避免了因硬件故障导致中断而对用户使用造成的影响，让用户使用更加爽快，同时，通过完善的备份措施，用户数据可以更好的进行保存，让用户不再担心邮件丢失。	
+                        </p>
+                    </li>
+                </ul>
+               	 
+                 <p><br /></p><p><br /></p><p><br /></p>
+                
+                
+            </div>
+            <div class="rcontent">
+               <dl class="ali_txt02">
+               		<dt>云计算优势突出</dt>
+					<dd>云邮箱基于云计算平台构建的企业邮箱管理系统，在庞大的服务器集群基础上，系统更加安全稳固，避免硬件损坏产生的中断问题，并且数据备份完善，让用户邮件数据安枕无忧；</dd>
+					<dt>企业邮箱首选品牌</dt>
+					<dd>企业邮箱账户数约1700000个，国内企业邮箱保有量第一，最受欢迎的企业邮箱之一。</dd>
+					<dt>产品功能完善易用</dt>
+					<dd>除了传统企业邮箱的各种功能，云邮箱还支持群发单显、往来邮件，文件共享等更加实用的功能，更好的满足中小企业内部信息沟通和分享的需要，更好的满足商务交流的需要；</dd>
+					<dt>7*24小时不间断服务</dt>
+					<dd>万网拥有专业的邮箱服务团队，提供7*24小时的在线，邮件及电话技术支持，并且实时监控邮箱的运行情况，保证用户问题能在第一时间发现并及时解决。</dd>
+				</dl>
+                <p><br /></p><p><br /></p><p><br /></p>
+                
+            </div>
+            <div class="rcontent">
+              	<div class="ali_txt03">
+                	<h3>什么是云计算？</h3>
+                    <p>
+					云计算是指IT基础设施的交付和使用模式，指通过网络以按需、易扩展的方式获得所需的资源(硬件、平台、软件)。 提供资源的网络被称为"云"。"云"中的资源在使用者看来是可以无限扩展的，并且可以随时获取，按需使用，随时扩展，按使用付费。 "云"是一个计算资源池，通常为一些大型服务器集群，包括计算服务器、存储服务器、带宽资源等等。 "云计算"将所有的计算资源集中起来，通过网络提供给用户。这使得应用提供者无需为繁琐的细节而烦恼，能够更加专注于自己的业务，有利于创新和降低成本。
+                	</p><br />
+                    <h3>万网云计算核心技术 </h3>
+                    <ul>
+                        <li class="ali_icon31">
+                            <h4>虚拟化技术</h4>
+                            虚拟化平台将服务器虚拟为多个性能可配的虚拟机(VM)，对整个集群系统中所有VM进行监控和管理，并根据实际资源使用情况灵活分配和调度资源池。
+                        </li>
+                        <li class="ali_icon32">
+                            <h4>分布式存储</h4>
+                            分布式存储用于将大量服务器整合为一台超级计算机，提供海量的数据存储和处理服务。分布式文件系统、分布式数据库允许访问共同存储资源，实现应用数据文件的IO共享。
+                        </li><li class="ali_icon33">
+                            <h4>资源调度</h4>
+                            虚拟机可以突破单个物理机的限制，动态的资源调整与分配消除服务器及存储设备的单点故障,实现高可用性。
+                        </li>
+                    </ul>
+					<p><br /></p><p><br /></p><p><br /></p>
+                </div>
+            </div>
+            <div class="rcontent">
+              	<dl class="ali_txt02">
+              	<dt>数据安全至关重要</dt>
+				<dd>企业往来邮件涉及重要的商务信息和关键文件，邮件丢失或者误删除极易导致重要数据丢失和信息沟通不畅。万网云邮箱有很强大的数据备份和恢复机制，确保您的邮件数据安枕无忧；</dd>
+				<dt>邮件收发效率</dt>
+				<dd>邮件投递成功率决定了信息传递和沟通的效果，所以平台的稳固、线路的顺畅将非常重要。中国万网国内顶级双线机房，在美国和香港都有中转集群，确保全球畅邮。</dd>
+				<dt>垃圾邮件烦不胜烦</dt>
+				<dd>垃圾邮件的泛滥，让用户烦不胜烦。万网强大的反垃圾系统，将根据独特的指纹算法，把垃圾邮件都拒之门外。 </dd>
+				</dl>
+              	<p><br /></p><p><br /></p><p><br /></p>
+              
+            </div>
+            
+        </div>     		
+
+    </div>
+</div>
+<!-- 主体 结束 -->
+{dede:include filename="footer.htm"/}
+</body>
+</html>

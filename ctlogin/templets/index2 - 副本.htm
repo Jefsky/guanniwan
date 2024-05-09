@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><?php echo $cfg_webname; ?></title>
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/invalid.css" type="text/css" media="screen" />	
+<script language="javascript" src="js/jquery.min.js" type="text/javascript"></script>	
+<script type="text/javascript" src="js/admin.jquery.configuration.js"></script>
+<script src="js/frame.js" language="javascript" type="text/javascript"></script>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.STYLE1 {
+	font-size: 12px;
+	color: #000000;
+}
+.STYLE5 {font-size: 12}
+.STYLE7 {font-size: 12px; color: #FFFFFF; }
+-->
+</style>
+
+<script language="javascript" type="text/javascript">
+	window.onload=function (){
+		setInterval("document.getElementById('time').innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000);
+	}
+</script>
+</head>
+<body>
+<div id="body-wrapper"> <!-- Wrapper for the radial gradient background -->
+<?php include(DEDEADMIN.'/templets/menu.htm'); ?>
+<script language="javascript">
+$("#index").addClass("current");$("#index_default").addClass("current");</script>
+
+			
+			<h2>欢迎您访问网站管理后台</h2>
+			<p id="page-intro">快捷方式</p>
+			
+			<ul class="shortcut-buttons-set">
+				
+				<li><a class="shortcut-button" href="article_add.php"><span>
+					<img src="images/icons/tjwz.png" alt="icon" /><br />
+					添加文章
+				</span></a></li>
+				
+				<li><a class="shortcut-button" target="_blank>" href="content_list.php"><span>
+					 <img src="images/icons/glwz.png" alt="icon" /><br />
+					管理文章
+				</span></a></li>
+				
+				<li><a class="shortcut-button" href="ad_main.php"><span>
+					<img src="images/icons/ad.png" alt="icon" /><br />
+					添加广告
+				</span></a></li>
+				
+				<li><a class="shortcut-button" href="sys_info.php"><span>
+					<img src="images/icons/xt.png" alt="icon" /><br />
+					基本设置
+				</span></a></li>
+				
+				<li><a class="shortcut-button" href="feedback_main.php"><span>
+					<img src="images/icons/pl.png" alt="icon" /><br />
+					评论管理
+				</span></a></li>
+                
+                <li><a class="shortcut-button" href="makehtml_homepage.php"><span>
+					<img src="images/icons/html.png" alt="icon" /><br />
+					生成页面
+				</span></a></li>
+				
+                
+                				
+				<li><a class="shortcut-button" href="makehtml_map_guide.php"><span>
+					<img src="images/icons/map.png" alt="icon" /><br />
+					生成地图
+				</span></a></li>
+				
+				<li><a class="shortcut-button" target="_blank>" href="sys_data.php"><span>
+					 <img src="images/icons/data.png" alt="icon" /><br />
+					数据备份
+				</span></a></li>
+				
+
+                
+                <li><a class="shortcut-button" target="_blank>" href="http://seo.chinaz.com/?host=<?php echo $cfg_basehost; ?>"><span>
+					<img src="images/icons/seo.png" alt="icon" /><br />
+					SEO查询
+				</span></a></li>
+                
+                
+			</ul><!-- End .shortcut-buttons-set -->
+			
+			<div class="clear"></div> <!-- End .clear -->
+			
+			<div class="content-box"><!-- Start Content Box -->
+				
+				<div class="content-box-header">
+					
+					<h3>系统信息</h3>
+					
+					
+					
+					<div class="clear"></div>
+					
+				</div> <!-- End .content-box-header -->
+				
+				<div class="content-box-content">
+					
+					<div class="tab-content default-tab" id="tab1"> <!-- This is the target div. id must match the href of this div's tab -->
+						
+						
+						
+						<table>
+						 
+							<tbody>
+								<tr>
+								</tr>
+								
+								<tr>
+									<td>环境信息</td>
+									<td><?php echo PHP_OS;?><?php echo $_SERVER['SERVER_NAME'];?>(<?php echo gethostbyname($_SERVER['SERVER_NAME']);?>)<?php echo $_SERVER['SERVER_SOFTWARE'];?> <?php echo "mysql ".mysql_get_server_info();?></td>
+								</tr>
+								
+									<tr>
+									<td>服务器时间-语言</td>
+									<td><div class="fRight mR10" id="time">  </div><?php echo getenv("HTTP_ACCEPT_LANGUAGE");?></td>
+								</tr>
+								<tr>
+									<td>当前附件尺寸</td>
+									<td><?php echo get_cfg_var("upload_max_filesize");?></td>
+								</tr>
+
+
+							</tbody>
+							
+						</table>
+						
+					</div> <!-- End #tab1 -->
+					
+				</div> <!-- End .content-box-content -->
+				
+			</div> <!-- End .content-box -->
+			
+			<div class="clear"></div>
+			
+			<?php include(DEDEADMIN.'/templets/footer.htm'); ?>
+			
+		</div> <!-- End #main-content -->	
+	</div>
+</body>
+</html>
+

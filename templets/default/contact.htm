@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta name="author" content="赤兔网络" />
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/core.css" />
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/style.css" />
+<script language="javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script language="javascript" src="{dede:global.cfg_templets_skin/}/js/common.js" type="text/javascript"></script>
+<script language="javascript" src="{dede:global.cfg_templets_skin/}/js/qq.js" type="text/javascript"></script>
+<!--[if lte IE 6]>
+<script src="{dede:global.cfg_templets_skin/}/js/DD_belatedPNG_0.0.8a-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('img');
+    </script>
+<![endif]--> 
+</head>
+<body>
+<!--  头部开始  -->
+{dede:include filename="head.htm"/}
+<!--  主标题 开始 -->
+<div id="main_title">
+	<div class="left"><h1><span>赤兔网络</span>诚实 勤奋 专业</h1></div>
+</div>
+<!--  主标题 结束 --> 
+
+<!-- 主体 开始 -->
+<div id="sub_main">
+	<div class="tab">
+    	<div class="tab_nav">
+                     <a  href="/contact" class="over"><span>联系方式</span></a>
+		            <a  href="/pay" ><span>汇款方式</span></a>
+		            <a  href="/news" ><span>公司动态</span></a>
+		            <a  href="/job" ><span>人才招聘</span></a>
+		            <a  href="/lc" ><span>服务流程</span></a>
+		            <a  href="/team" ><span>专业团队</span></a>
+		           <a href="/about"><span>关于赤兔网络</span></a>
+        </div> 		
+        <div  class="tabid pay">
+        
+            <div class="con_list">
+            	<div class="con_left">    
+                    <h1  class="paytitle">联系我们
+					&nbsp;&nbsp;
+	<a href="/wh" class="sub_mt">提交维护工单</a>
+					</h1>
+                    <div class="contact">
+					售前咨询：       0769-89875011   22028345<br />
+			 售后服务：       0769-89875011<br />
+ 财务续费：       0769-89875011<br />
+ 公司传真：       0769-89875011<br />
+ 客服邮箱：       service@sanrenxing.so<br />         
+                        公司地址：       东莞市南城区胜和路胜和广场D座1113A<br />
+                        公司邮编：     523000 
+                    </div>
+                </div>
+                <div class="con_right">
+               <form name="msgform" id="msgform" method="post" action="/plus/diy.php" onSubmit="return checkData(this);" >
+	  <input name="act" type="hidden" value="submit" />
+	  
+	  <div class="left subfeed">
+                        <label>姓 &nbsp;&nbsp; 名：<input type="text" size="16" value="" name="uname" id="uname" /></label>
+                        <label> &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp; <input type="radio" name="sex" value="男" /> 男  &nbsp;  <input type="radio" name="sex" value="女" /> 女</label>
+                        <label>电 &nbsp;&nbsp; 话：<input type="text" size="16" name="tel" id="tel" value="0755-89810545" onclick="this.value=''" style="color:grey" /></label>
+                        <label>邮 &nbsp;&nbsp; 箱：<input type="text" size="16" value="service@10000idc.net" onclick="this.value=''" name="email" id="email" style="color:grey" /></label>
+                        <label>验证码：<input name="validate" type="text" value="" size="5" id="validate" /> *  <img alt="点击我更换图片" align="absmiddle" title="点击我更换图片" onclick="this.src=this.src+'?'" width="50px"  id="validateimg" style="cursor: pointer;" src="/web/data/imagecode.php?act=verifycode&front=1">
+						</label>
+                    </div>
+                    <div class="right">
+                        写下您想说的话，我们会尽快回复。<br />(20~400个字符)<br />
+                        <textarea name="content" cols="29" rows="6" id="content"></textarea><br />
+                        <input type="submit" name="s" value=" 提交 " /> 
+                        <input type="reset" name="re" value=" 重填 "/>
+						<a href="/feedback">查看留言</a>
+                    </div>
+                   </form>
+                </div>
+            </div>     
+            <h1  class="paytitle map">我们的具体位置</h1>
+            <img src="{dede:global.cfg_templets_skin/}/images/map.gif" width="606" height="475" style="margin:10px 0 30px" />
+        
+        
+        </div>
+    </div>
+</div>
+<!-- 主体 结束 -->
+﻿{dede:include filename="footer.htm"/}
+</body>
+</html>
